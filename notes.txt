@@ -1,0 +1,53 @@
+LIMITING SCOPE:
+hold off on ascii art and pretty console stuff until end
+functionality - playable, run simulation, view results
+keep things simple and limit frills until basic functionality implemented
+ruleset will be constrained to standard vegas strip rules for the time being (use rules file and leave other rule settings methods for later)
+
+
+issues
+redundant code to calculate hand values
+i'm not sure of a good solution to this
+
+make sure player action is being recorded in gamestate
+
+todo
+make menus consistent and check to make sure error msg is displayed after clearing the screen from too many bad inputs
+use good ascii symbol for consistent visual element indicating user input
+provide feedback for unexpected input in rules.config
+implement autoplay (stop asking me this - for play again menu)
+
+
+implement debug - log all hand values to see which ones are causing this
+
+check verbose output of deck creation
+
+
+convert display class to navigation class and move all menus and user input interactions there?
+
+
+
+
+deal cards
+
+prompt player (present current available actions)
+  get/validate input
+  update & record gamestate
+  execute player action
+  check win/lose conditions
+reprompt unless game over
+
+at game end, results class should process game object
+
+=end
+#
+# => simulation process:
+# =>  define: #iterations, ruleset
+# =>    simulation will run the game with ruleset parameters #iterations times
+# =>    the results class will be used to collect summary statistics
+#
+#
+# => game process:
+# =>  player places bet, shoe deals cards to player and dealer, player acts, dealer responds, winner determined, outcome recorded (along with all gamestates), cards discarded
+#
+#
