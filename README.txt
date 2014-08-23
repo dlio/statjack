@@ -1,4 +1,13 @@
-BlackJack:
+
+# StatJack
+
+A Ruby program requiring the following gems: awesomeprint, progressbar, htmlentities.
+
+On Windows, uncomment the first line of the lib/requirements.rb file to allow for pretty console output.
+
+———
+
+### BlackJack
 
 The object of the blackjack game is to accumulate cards with point totals as close to 21 without going over 21. 
 Face cards (Jacks, Queens and Kings) are worth 10 points. Aces are worth 1 or 11, whichever is preferable. 
@@ -8,7 +17,7 @@ If player and the House tie, it is a push and no one wins.
 Ace and 10 (Blackjack) on the first two cards dealt is an automatic player win at 1.5 to 1, unless the house ties. 
 A player may stand at any time.
 
-Playing blackjack
+### Playing blackjack
 
 To win you need to beat the dealer without busting. 
 You bust when your cards total to more than 21 and you lose automatically. 
@@ -38,12 +47,4 @@ Surrender: giving up your hand and lose only half the bet.
 Double Down: double your initial bet following the initial two-card deal, but you can hit one card only. A good bet if the player is in a strong situation. Most casinos will allow you to double down on any two cards. Some casinos will let you double down after splitting and some will limit your doubling down to hands that total ten or eleven. However, there is one condition: When you double down, you must take one additional card and you cannot receive more than one.
 Split: split the initial two-card hand into two and play them separately - allowed only when the two first cards are of equal value. Use each card as the start to a separate hand and place a second bet equal to the first.
 
-########################################################################################################################################################
-########################################################################################################################################################
-
-StatJack:
-
-+ is a ruby program
-+ requires the following gems: awesomeprint, progressbar, htmlentities
-+ on windows, the first line of the lib/requirements.rb file needs to be un-commented to allow for correct console output
 
